@@ -1,10 +1,28 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+
+@tomasztacka
+tomasztacka
+/
+logoSliderByOwl
+1
+00
+ Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights Settings
+logoSliderByOwl/index
+@tomasztacka tomasztacka Create index
+7d34f4c 9 days ago
+3442 lines (2953 sloc)  89 KB
+
 <!DOCTYPE html>
 <html lang="pl-PL">
   <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="noindex, nofollow">
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 
@@ -63,8 +81,6 @@
         right: 40px
     }
     </style>
-
-
 
 
   </head>
@@ -131,10 +147,23 @@
         autoplayTimeout:1000,
         nav:false,
         dots:false,
-        autoWidth:true,
-        items:1,
+        autoWidth:false,
+        items:4,
         margin:42,
         startPosition:(Math.round( (Math.random()*10)/8 )) * 4,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            768:{
+                items:2,
+
+            },
+            992:{
+                items:4,
+            }
+        }
         });
 
         if($('.brands_prev').length)
@@ -3440,3 +3469,15 @@
 
   </body>
 </html>
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
